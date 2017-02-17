@@ -4,5 +4,13 @@
     "type": "library",
     "require": {
         "php": "^5.3.3 || ^7.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hug\\Group\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
     }
 }
