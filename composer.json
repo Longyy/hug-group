@@ -1,0 +1,8 @@
+{
+    "name": "hug/group",
+    "description": "hug base library",
+    "type": "library",
+    "require": {
+        "php": "^5.3.3 || ^7.0"
+    }
+}
