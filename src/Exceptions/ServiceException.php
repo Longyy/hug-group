@@ -1,8 +1,8 @@
 <?php
-namespace Paf\Estate\Exceptions;
+namespace Hug\Group\Exceptions;
 
-use Paf\Estate\Contracts\Exceptions\ServiceException as ServiceExceptionContract;
-use Paf\Estate\Exceptions\Translator\Translator;
+use Hug\Group\Contracts\Exceptions\ServiceException as ServiceExceptionContract;
+use Hug\Group\Exceptions\Translator\Translator;
 use Exception;
 
 class ServiceException extends Exception implements ServiceExceptionContract

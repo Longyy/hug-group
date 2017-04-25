@@ -1,9 +1,9 @@
 <?php
-namespace Paf\Estate\Validation;
+namespace Hug\Group\Validation;
 
 use Illuminate\Contracts\Validation\Validator;
-use Paf\Estate\Exceptions\ExceptionPool;
-use Paf\Estate\Exceptions\ValidateException;
+use Hug\Group\Exceptions\ExceptionPool;
+use Hug\Group\Exceptions\ValidateException;
 
 trait ValidationErrors
 {
@@ -27,7 +27,7 @@ trait ValidationErrors
             $sRule      = strtoupper(key($aFail));
             $sLowerRule = strtolower(key($aFail));
             array_unshift($aParams, $sAttribute);
-            preg_match_all('~:\w+~', app('translator')->getCatalogue()->get("exceptions.Paf\Estate\Exceptions\ValidateException.{$sRule}.0"), $aMatch);
+            preg_match_all('~:\w+~', app('translator')->getCatalogue()->get("exceptions.Hug\Group\Exceptions\ValidateException.{$sRule}.0"), $aMatch);
 
             $aParameters = [];
             if (count($aParams) > count($aMatch[0])) {
@@ -40,8 +40,8 @@ trait ValidationErrors
             $aErrors[] = new ValidateException(
                 $sAttribute,
                 array_get($aData, $sAttribute),
-                isset($aMessages["{$sAttribute}.{$sLowerRule}"]) ? $aMessages["{$sAttribute}.{$sLowerRule}"] : trans("exceptions.Paf\Estate\Exceptions\ValidateException.{$sRule}.0", $aParameters),
-                trans("exceptions.Paf\Estate\Exceptions\ValidateException.{$sRule}.1"),
+                isset($aMessages["{$sAttribute}.{$sLowerRule}"]) ? $aMessages["{$sAttribute}.{$sLowerRule}"] : trans("exceptions.Hug\Group\Exceptions\ValidateException.{$sRule}.0", $aParameters),
+                trans("exceptions.Hug\Group\Exceptions\ValidateException.{$sRule}.1"),
                 join("|", $aRules[$sAttribute])
             );
         }

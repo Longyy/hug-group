@@ -157,7 +157,7 @@ if (!function_exists('hf_url')) {
         if (substr($sDomain, -3) == 'Url') {
             $sDomain = substr($sDomain, 0, -3);
         }
-        return Paf\Estate\Foundation\Url::{$sDomain . 'Url'}($sUri, $aParams, $mScheme);
+        return Hug\Group\Foundation\Url::{$sDomain . 'Url'}($sUri, $aParams, $mScheme);
     }
 }
 

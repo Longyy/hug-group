@@ -1,5 +1,5 @@
 <?php
-namespace Paf\Estate\Validation;
+namespace Hug\Group\Validation;
 
 use Illuminate\Validation\Validator as BaseValidator;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Paf\Estate\Exceptions\Translator;
+namespace Hug\Group\Exceptions\Translator;
 
 trait Translator
 {

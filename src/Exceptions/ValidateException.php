@@ -1,8 +1,8 @@
 <?php
-namespace Paf\Estate\Exceptions;
+namespace Hug\Group\Exceptions;
 
-use Paf\Estate\Contracts\Exceptions\ValidateException as ValidateExceptionContract;
-use Paf\Estate\Exceptions\Translator\Translator;
+use Hug\Group\Contracts\Exceptions\ValidateException as ValidateExceptionContract;
+use Hug\Group\Exceptions\Translator\Translator;
 use Exception;
 
 /**

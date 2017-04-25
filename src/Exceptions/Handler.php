@@ -1,5 +1,5 @@
 <?php
-namespace Paf\Estate\Exceptions;
+namespace Hug\Group\Exceptions;
 
 use ErrorException;
 use Paf\LightService\Core\Message\Response\Response;

@@ -1,8 +1,8 @@
 <?php
-namespace Paf\Estate\Exceptions;
+namespace Hug\Group\Exceptions;
 
-use Paf\Estate\Contracts\Exceptions\ExceptionPool as ExceptionPoolContract;
-use Paf\Estate\Contracts\Exceptions\ValidateException as ValidateExceptionContract;
+use Hug\Group\Contracts\Exceptions\ExceptionPool as ExceptionPoolContract;
+use Hug\Group\Contracts\Exceptions\ValidateException as ValidateExceptionContract;
 use Exception;
 use Iterator;
 
@@ -13,7 +13,7 @@ class ExceptionPool extends Exception implements ExceptionPoolContract, Iterator
 {
     /**
      * 异常池实例
-     * @var \Paf\Estate\Exceptions\ExceptionPool
+     * @var \Hug\Group\Exceptions\ExceptionPool
      */
     private static $oExceptionPool;
 
@@ -46,7 +46,7 @@ class ExceptionPool extends Exception implements ExceptionPoolContract, Iterator
      *
      * @author Sinute
      * @date   2015-04-16
-     * @param  \Paf\Estate\Contracts\Exceptions\ValidateException $oException
+     * @param  \Hug\Group\Contracts\Exceptions\ValidateException $oException
      */
     public function add(ValidateExceptionContract $oException)
     {
@@ -75,7 +75,7 @@ class ExceptionPool extends Exception implements ExceptionPoolContract, Iterator
      *
      * @author Sinute
      * @date   2015-04-16
-     * @return \Paf\Estate\Exceptions\ExceptionPool
+     * @return \Hug\Group\Exceptions\ExceptionPool
      */
     public static function getInstance()
     {
@@ -92,7 +92,7 @@ class ExceptionPool extends Exception implements ExceptionPoolContract, Iterator
      *
      * @author Sinute
      * @date   2015-04-16
-     * @return \Paf\Estate\Contracts\Exceptions\Exception
+     * @return \Hug\Group\Contracts\Exceptions\Exception
      */
     public function current()
     {
